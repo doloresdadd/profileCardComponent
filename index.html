@@ -20,25 +20,55 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="bg-darkCyan">
+  <body>
     <main>
-      <div class="relative items-center justify-center">
-        <div class="absolute top-0 left-0 right-0 bg-patternBottom bg-no-repeat bg-contain h-1/2">
-          Content
-      </div>
-        <div class="absolute h-1/2">
-          Victor Crest 26 London 80K Followers 803K Likes 1.4K Photos
+      <!-- Background Container -->
+      <div class="container backgroundContainer">
+        <img src="images/bg-pattern-top.svg" alt="" class="image-top" />
+        <img src="images/bg-pattern-bottom.svg" alt="" class="image-bottom" />
+
+        <!-- Card Container-->
+        <div class="container cardContainer">
+          <!-- Background Pattern -->
+          <div class="backgroundPattern"></div>
+          <!-- card bottom div -->
+          <div class="cardbottom">
+            <!-- Image -->
+            <img src="images/image-victor.jpg" alt="" class="profilepic" />
+            <!-- card title -->
+            <div class="cardTitle">
+              Victor Crest<span class="light">&nbsp;&nbsp;&nbsp; 26</span>
+            </div>
+            <div class="london">London</div>
+            <!-- divider -->
+            <div class="divider"></div>
+            <!-- Stats -->
+            <div class="stats">
+              <div>
+                <p><span class="statNumbers">80K</span></p>
+                <p><span class="category">Followers</span></p>
+              </div>
+              <div>
+                <p><span class="statNumbers">803K</span></p>
+                <p><span class="category">Likes</span></p>
+              </div>
+              <div>
+                <p><span class="statNumbers">1.4K</span></p>
+                <p><span class="category">Photos</span></p>
+              </div>
+            </div>
+          </div>
         </div>
-        
+      </div>
     </main>
-    
+
     <footer>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Bethanie Innes</a>.
-    </div>
-  </footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Bethanie Innes</a>.
+      </div>
+    </footer>
   </body>
 </html>

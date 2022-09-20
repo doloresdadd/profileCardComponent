@@ -1,0 +1,157 @@
+$font-stack: Kumbh Sans, sans-serif;
+$darkCyan: hsl(185, 75%, 39%);
+$veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+$darkGrayishBlue: hsl(227, 10%, 46%);
+$darkGray: hsl(0, 0%, 59%);
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 95%;
+  width: 100%;
+}
+
+body {
+  background-color: $darkCyan;
+  font-family: $font-stack;
+  font-size: 18px;
+  overflow: hidden;
+  text-align: center;
+  color: $veryDarkDesaturatedBlue;
+}
+
+p {
+  margin: 5px;
+}
+
+.light {
+  color: $darkGrayishBlue;
+}
+
+.london {
+  padding-top: 7px;
+  color: $darkGrayishBlue;
+  font-size: 14px;
+}
+
+.divider {
+  padding-top: 20px;
+  width: 100%;
+  border-bottom: $darkGray 0.3px solid;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+
+  flex-direction: row;
+  padding: 10px 30px;
+  .statNumbers {
+    font-weight: bold;
+    color: $veryDarkDesaturatedBlue;
+    padding: 0;
+    margin: 0;
+  }
+
+  .category {
+    font-weight: lighter;
+    color: $darkGray;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.backgroundContainer {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.image-top {
+  position: absolute;
+
+  top: -50%;
+  left: -20%;
+}
+
+.image-bottom {
+  position: absolute;
+
+  bottom: -50%;
+  right: -20%;
+}
+
+.cardContainer {
+  border-radius: 10px; /* 5px rounded corners */
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  height: 48%;
+  width: 400px;
+}
+
+.backgroundPattern {
+  background-image: url("/images/bg-pattern-card.svg");
+  background-size: cover;
+
+  height: 40%;
+  width: 100%;
+}
+
+.cardbottom {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .profilepic {
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    top: -50px;
+    left: 140px;
+  }
+}
+
+.cardTitle {
+  padding-top: 70px;
+}
+
+@media screen and (max-width: 579px) {
+  .image-top {
+    width: 175%;
+    top: -50%;
+    left: -125%;
+  }
+
+  .image-bottom {
+    width: 175%;
+    bottom: -50%;
+    right: -125%;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
